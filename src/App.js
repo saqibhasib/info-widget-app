@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Accordion from "./Components/Accordion";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const items = [
+    {
+        title: 'Project: Mindful',
+        content: 'Android app that shows inspection report on restaurants in Surrey.'
+    },
+    {
+        title: 'Yelp clone',
+        content: 'Clone of the popular website Yelp.'
+    },
+    {
+        title: 'Media Player',
+        content: 'Android app for playing media on your phone.'
+    }
+]
 
-export default App;
+export default () => {
+    return(
+        <div>
+            <Accordion items={items}/>
+        </div>
+    );
+};
