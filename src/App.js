@@ -3,7 +3,7 @@ import Accordion from "./Components/Accordion";
 
 const items = [
     {
-        title: 'Project: Mindful',
+        title: 'Mindful',
         content: 'Android app that shows inspection report on restaurants in Surrey.'
     },
     {
